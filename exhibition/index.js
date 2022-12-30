@@ -4,7 +4,7 @@
     HAMBURGER MENU
 ===================================================*/
 function hamburgerMenu() {
-  let navBar = document.querySelector("#navi");
+  let navBar = document.querySelector("#nav");
   let hamburgerBtn = document.querySelector(".hamburger");
 
   if (
