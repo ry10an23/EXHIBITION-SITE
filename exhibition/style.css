@@ -5,7 +5,22 @@
 }
 
 body {
+  background-color: #252525;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
 }
 
 .wrapper {
