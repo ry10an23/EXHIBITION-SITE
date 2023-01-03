@@ -118,3 +118,18 @@ img {
 #header .menu li {
   margin-bottom: 20px;
 }
+
+/************************************ 
+  MAIN MAIN VISUAL
+*************************************/
+.container {
+  background-color: #252525;
+  color: #fff;
+  text-align: center;
+}
+
+.mainVisual {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
