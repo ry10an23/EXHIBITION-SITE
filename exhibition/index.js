@@ -20,3 +20,25 @@ function hamburgerMenu() {
     hamburgerBtn.classList.remove("active");
   }
 }
+
+/*=================================================
+    SHOW THE MENU BAR
+===================================================*/
+
+const logo = document.getElementsByClassName("logo");
+const hamburger = document.getElementsByClassName("hamburger");
+
+window.addEventListener("scroll", () => {
+  const currentY = window.pageYOffset;
+  if (currentY > 520) {
+    setTimeout(function () {
+      logo[0].style.display = "block";
+      hamburger[0].style.display = "block";
+    }, 1);
+  } else {
+    setTimeout(function () {
+      logo[0].style.display = "none";
+      hamburger[0].style.display = "none";
+    }, 1);
+  }
+});
