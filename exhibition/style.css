@@ -124,7 +124,7 @@ img {
 /************************************ 
   MAIN MAIN VISUAL
 *************************************/
-.container {
+#container {
   background-color: #252525;
   color: #fff;
   text-align: center;
@@ -134,4 +134,13 @@ img {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+}
+
+main .main-title {
+  /* color: #fff; */
+  font-size: 6.25rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  /* text-align: center; */
+  margin: 100px 0;
 }
