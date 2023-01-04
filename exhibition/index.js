@@ -46,3 +46,18 @@ window.addEventListener("scroll", () => {
 /*=================================================
     RESCALING MAIN VISUAL IMAGES
 ===================================================*/
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth > 900) {
+    const currentY = window.pageYOffset;
+    let imgs = document.getElementsByClassName("mainVisImg");
+    for (const img of imgs) {
+      img.style.width = 100 / 3 + currentY / 10 + "%";
+    }
+  } else {
+    let imgs = document.getElementsByClassName("mainVisImg");
+    for (const img of imgs) {
+      img.style.width = 100 - currentY / 10 + "%";
+    }
+  }
+});
