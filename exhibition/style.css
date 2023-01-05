@@ -6,7 +6,6 @@
 
 body {
   background-color: #252525;
-
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -155,6 +154,10 @@ h2.subtitle {
   margin-bottom: 45px;
 }
 
+/************************************ 
+  MAIN INFORMATION
+*************************************/
+
 #info {
   margin-bottom: 140px;
 }
@@ -171,6 +174,14 @@ h2.subtitle {
 
 #info span.info-date-en {
   font-size: 1.5rem;
+}
+
+/************************************ 
+  MAIN GALLERY
+*************************************/
+
+#gallery {
+  margin-bottom: 480px;
 }
 
 #gallery .gallery-imgs li:nth-child(odd) {
@@ -202,4 +213,37 @@ li.fadein.show {
 
 #gallery .gallery-imgs img {
   width: 48%;
+}
+
+/************************************ 
+  MAIN ACCESS
+*************************************/
+#access {
+  border: 1px solid red;
+  margin-bottom: 480px;
+}
+
+#access .access-location {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.address {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.contact {
+  font-size: 1rem;
+}
+
+.contact span {
+  display: block;
+}
+
+#access a {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 15px 82px;
+  margin-top: 30px;
 }
