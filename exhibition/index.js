@@ -55,6 +55,7 @@ window.addEventListener("scroll", () => {
       img.style.width = 100 / 3 + currentY / 10 + "%";
     }
   } else {
+    const currentY = window.pageYOffset;
     let imgs = document.getElementsByClassName("mainVisImg");
     for (const img of imgs) {
       img.style.width = 100 - currentY / 10 + "%";
@@ -65,3 +66,17 @@ window.addEventListener("scroll", () => {
 /*=================================================
     FADE IN GALLERY IMAGES
 ===================================================*/
+let galleryImgs = document.querySelectorAll(".pic");
+
+window.addEventListener("scroll", () => {
+  let scroll = window.scrollY; // Get the scroll area
+  let windowHeight = window.innerHeight; //Get the height of window without bookmark bar
+  for (let galleryImg of galleryImgs) {
+    let targetPos = galleryImg.getBoundingClientRect().top + scroll;
+    if (scroll > targetPos - windowHeight) {
+      if (galleryImg.classList.contains("fadein")) {
+        galleryImg.classList.add("show");
+      }
+    }
+  }
+});
