@@ -95,3 +95,24 @@ window.addEventListener("scroll", function () {
     sideBtn.setAttribute("id", "side_btn");
   }
 });
+
+/*=================================================
+    RESCALING MAIN VISUAL SCALING (COMMON PROCESS)
+===================================================*/
+const mv_scale = () => {
+  window.addEventListener("scroll", () => {
+    if (window.innerWidth > 900) {
+      const currentY = window.pageYOffset;
+      let imgs = document.getElementsByClassName("mainVisImg");
+      for (const img of imgs) {
+        img.style.width = 100 / 3 + currentY / 10 + "%";
+      }
+    } else {
+      const currentY = window.pageYOffset;
+      let imgs = document.getElementsByClassName("mainVisImg");
+      for (const img of imgs) {
+        img.style.width = 100 - currentY / 10 + "%";
+      }
+    }
+  });
+};
