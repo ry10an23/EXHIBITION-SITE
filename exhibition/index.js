@@ -51,6 +51,14 @@ window.addEventListener("scroll", function () {
   });
 
   /*=================================================
+    LOADING AND RESIZING EVENT
+===================================================*/
+  window.addEventListener("resize", function (e) {
+    let scroll = window.pageYOffset;
+    mv_scale(scroll);
+  });
+
+  /*=================================================
     FADE IN GALLERY IMAGES
 ===================================================*/
   let galleryImgs = document.querySelectorAll(".pic");
