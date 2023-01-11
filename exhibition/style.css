@@ -145,6 +145,17 @@ main .main-title {
   margin: 100px 0;
 }
 
+h1.fadein {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 2s;
+}
+
+h1.fadein.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 h2.subtitle {
   font-size: 3.75rem;
   font-weight: 300;
@@ -160,6 +171,17 @@ h2.subtitle {
 
 #info {
   margin-bottom: 140px;
+}
+
+#info.fadein {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 2s;
+}
+
+#info.fadein.show {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .info-location {
@@ -214,6 +236,17 @@ h2.subtitle {
 
 #gallery {
   margin-bottom: 480px;
+}
+
+#gallery h2.fadein {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 2s;
+}
+
+#gallery h2.fadein.show {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 #gallery .gallery-imgs li:nth-child(odd) {
