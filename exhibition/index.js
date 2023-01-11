@@ -22,6 +22,23 @@ function hamburgerMenu() {
 }
 
 /*=================================================
+    FADE-IN (Title & Info & Gallery)
+===================================================*/
+let fadeInEles = document.querySelectorAll(".fadein");
+
+fadeInEles.forEach(function (fadeIn) {
+  let windowHeight = window.innerHeight;
+
+  window.addEventListener("scroll", () => {
+    let offset = fadeIn.getBoundingClientRect().top;
+    let scroll = window.scrollY;
+    if (scroll > offset + windowHeight) {
+      fadeIn.classList.add("show");
+    }
+  });
+});
+
+/*=================================================
     SCROLLING EVENT
 ===================================================*/
 window.addEventListener("scroll", function () {
