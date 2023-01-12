@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #252525;
   font-family: "Source Sans Pro", sans-serif;
@@ -27,6 +31,17 @@ img {
   max-width: 800px;
   padding: 0px 30px;
   margin: 0 auto;
+}
+
+.bg {
+  background: url("./img/bg.jpg") center center repeat !important;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
 }
 
 /************************************ 
@@ -277,8 +292,10 @@ li.fadein.show {
 /************************************ 
   MAIN ACCESS
 *************************************/
+
 #access {
   border: 1px solid red;
+  position: relative;
   margin-bottom: 480px;
   z-index: 20;
 }
