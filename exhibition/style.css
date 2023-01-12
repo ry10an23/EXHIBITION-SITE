@@ -328,3 +328,27 @@ li.fadein.show {
 /************************************ 
   MAIN CONTACT
 *************************************/
+
+#contact a {
+  /* border: 1px solid #fff; */
+  outline: 1px solid;
+  outline-color: #fff;
+  outline-offset: 0px;
+  width: 400px;
+  display: block;
+  padding: 30px 0;
+  margin: 0 auto 40px;
+  transition: 0.3s;
+}
+
+#contact a:hover {
+  outline-color: red;
+  animation: light 1s infinite;
+}
+
+@keyframes light {
+  100% {
+    outline-color: transparent;
+    outline-offset: 12px;
+  }
+}
