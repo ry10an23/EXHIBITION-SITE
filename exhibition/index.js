@@ -106,18 +106,14 @@ window.addEventListener("scroll", function () {
   let access_position = access_rect.top + scrollTop;
 
   let sideBtn = document.getElementById("side_btn");
-
   if (window.innerWidth > 900) {
     if (scroll > gallery_position) {
       if (scroll < access_position) {
-        // console.log("hello world");
-        sideBtn.setAttribute("id", "side_btn_show");
-      } else {
-        sideBtn.setAttribute("id", "side_btn");
+        sideBtn.style.transform = "rotate(-90deg) translateY(0px)";
       }
+    } else {
+      sideBtn.style.transform = "rotate(-90deg) translateY(60px)";
     }
-  } else {
-    sideBtn.setAttribute("id", "side_btn");
   }
 });
 
