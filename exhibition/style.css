@@ -201,8 +201,7 @@ h2.subtitle {
 /************************************ 
   SIDE BUTTON
 *************************************/
-#side_btn,
-#side_btn_show {
+#side_btn {
   border: solid 1px #fff;
   position: fixed;
   right: -144px;
@@ -212,12 +211,7 @@ h2.subtitle {
   z-index: 30;
 }
 
-#side_btn_show {
-  transform: rotate(-90deg) translateY(0px);
-}
-
-#side_btn a,
-#side_btn_show a {
+#side_btn a {
   width: 165px;
   font-size: 0.875rem;
   display: inline-block;
@@ -226,7 +220,7 @@ h2.subtitle {
   transition: 0.3s;
 }
 
-#side_btn_show a:last-of-type {
+#side_btn a:last-of-type {
   border-left: 1px solid #fff;
 }
 
@@ -313,3 +307,7 @@ li.fadein.show {
   padding: 15px 82px;
   margin-top: 30px;
 }
+
+/************************************ 
+  MAIN CONTACT
+*************************************/
