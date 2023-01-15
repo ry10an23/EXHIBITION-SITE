@@ -110,6 +110,8 @@ window.addEventListener("scroll", function () {
     if (scroll > gallery_position) {
       if (scroll < access_position) {
         sideBtn.style.transform = "rotate(-90deg) translateY(0px)";
+      } else {
+        sideBtn.style.transform = "rotate(-90deg) translateY(60px)";
       }
     } else {
       sideBtn.style.transform = "rotate(-90deg) translateY(60px)";
