@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #252525;
+  /* background-color: #252525; */
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -328,6 +328,9 @@ li.fadein.show {
 /************************************ 
   MAIN CONTACT
 *************************************/
+#contact {
+  margin-bottom: 200px;
+}
 
 #contact a {
   /* border: 1px solid #fff; */
@@ -351,4 +354,44 @@ li.fadein.show {
     outline-color: transparent;
     outline-offset: 12px;
   }
+}
+
+/************************************ 
+  FOOTER
+*************************************/
+#footer {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 80px 30px;
+}
+
+#footer .company_detail {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#footer .info {
+  margin-bottom: 30px;
+}
+
+#footer .info span {
+  display: block;
+}
+
+#footer .sns .sns_list {
+  display: flex;
+  gap: 15px;
+}
+
+#footer .company_policy {
+  display: flex;
+  align-items: center;
+}
+
+#footer .company_policy li {
+  margin-left: 30px;
 }
