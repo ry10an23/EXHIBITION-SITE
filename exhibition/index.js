@@ -124,36 +124,36 @@ window.addEventListener("scroll", function () {
   let contact_rect = contact.getBoundingClientRect();
   let contact_position = contact_rect.top + scrollTop;
 
-  if (scroll > access_position) {
-    if (scroll < contact_position) {
-      const ms = 500;
-      let access_bg = document.getElementsByClassName("bg");
-      access_bg[0].style.transition = "opacity " + ms + "ms";
-      setTimeout(function () {
-        access_bg[0].style.opacity = 1;
-      }, 1);
-    } else {
-      const ms = 500;
-      let access_bg = document.getElementsByClassName("bg");
-      access_bg[0].style.transition = "opacity " + ms + "ms";
-      setTimeout(function () {
-        access_bg[0].style.opacity = 0;
-      }, 1);
-      setTimeout(function () {
-        access_bg[0].style.display = "none";
-      }, ms + 10);
-    }
-  } else {
-    const ms = 500;
-    let access_bg = document.getElementsByClassName("bg");
-    access_bg[0].style.transition = "opacity " + ms + "ms";
-    setTimeout(function () {
-      access_bg[0].style.opacity = 0;
-    }, 1);
-    setTimeout(function () {
-      access_bg[0].style.display = "none";
-    }, ms + 10);
-  }
+  // if (scroll > access_position) {
+  //   if (scroll < contact_position) {
+  //     const ms = 500;
+  //     let access_bg = document.getElementsByClassName("bg");
+  //     access_bg[0].style.transition = "opacity " + ms + "ms";
+  //     setTimeout(function () {
+  //       access_bg[0].style.opacity = 1;
+  //     }, 1);
+  //   } else {
+  //     const ms = 500;
+  //     let access_bg = document.getElementsByClassName("bg");
+  //     access_bg[0].style.transition = "opacity " + ms + "ms";
+  //     setTimeout(function () {
+  //       access_bg[0].style.opacity = 0;
+  //     }, 1);
+  //     setTimeout(function () {
+  //       access_bg[0].style.display = "none";
+  //     }, ms + 10);
+  //   }
+  // } else {
+  //   const ms = 500;
+  //   let access_bg = document.getElementsByClassName("bg");
+  //   access_bg[0].style.transition = "opacity " + ms + "ms";
+  //   setTimeout(function () {
+  //     access_bg[0].style.opacity = 0;
+  //   }, 1);
+  //   setTimeout(function () {
+  //     access_bg[0].style.display = "none";
+  //   }, ms + 10);
+  // }
 });
 
 /*=================================================
