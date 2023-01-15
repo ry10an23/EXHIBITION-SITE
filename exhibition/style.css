@@ -151,6 +151,13 @@ img {
   overflow-x: hidden;
 }
 
+.mainVisual img {
+  width: calc(100%3);
+  height: 100vh;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
 main .main-title {
   /* color: #fff; */
   font-size: 6.25rem;
