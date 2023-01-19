@@ -34,7 +34,7 @@ img {
 }
 
 .bg {
-  background: url("./img/bg.jpg") center center repeat !important;
+  background: url("exhibition/img/bg.jpg") center center repeat !important;
   width: 100vw;
   height: 100vh;
   position: fixed;
